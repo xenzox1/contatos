@@ -1,98 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games Shop - A sua loja de games</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Games Shop</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">Sobre a loja</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="about">
-        <div class="container">
-            <img class="store-front" src="./images/loja.jpg" alt="Fachada da loja Games Shop"  />
-            <div>
-                <h2>Sobre a loja</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo quam deserunt accusantium odit! Sequi voluptatibus, quos esse consectetur maiores velit, enim aut cum est beatae pariatur numquam ab ipsum?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum, magnam saepe odio totam iure eligendi reiciendis voluptatum enim debitis assumenda, distinctio deserunt odit accusamus pariatur provident dolore consectetur delectus?
-                </p>
-                <ul class="brands-list">
-                    <li><img src="images/nintendo.png" alt="Nintendo" /></li>
-                    <li><img src="images/xbox.png" alt="Xbox" /></li>
-                    <li><img src="images/playstation.png" alt="Playstation" /></li>
-                </ul>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Árvores</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Árvores</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <h2>Bem-vindo ao Site sobre Árvores!</h2>
+            <p>Seja bem-vindo ao nosso site dedicado à preservação e beleza das árvores. Aqui, você encontrará informações interessantes sobre diversos aspectos relacionados às árvores, desde sua importância para o meio ambiente até os diferentes tipos e curiosidades sobre essas maravilhas naturais.</p>
+            <p>Explore as seções abaixo para aprender mais!</p>
+        </section>
+    
+        <section id="sobre">
+            <div class="container-sobre">
+                <div class="text-sobre">
+                    <h2>Sobre</h2>
+                    <p>As árvores desempenham um papel fundamental em nosso ecossistema. Elas fornecem oxigênio, abrigo e alimento para uma variedade de seres vivos. Nesta seção, discutiremos a importância das árvores para o meio ambiente e para a vida humana.</p>
+                    <p>Além disso, abordaremos como as árvores ajudam a combater as mudanças climáticas, a importância da preservação das florestas e muito mais.</p>
+                </div>
+                <div class="img-sobre">
+                    <img src="./images/arvore.jpeg" alt="Árvore">
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
+        </section>
+    
+        <section id="tipos">
+            <h2>Tipos de Árvores</h2>
+            <p>Existem milhares de espécies de árvores em todo o mundo, cada uma com características únicas e importantes para o ecossistema. Nesta seção, exploraremos diferentes tipos de árvores, incluindo:</p>
+            <div class="arvores">
+                <figure>
+                    <img src="./images/frutifera.avif" alt="Árvores frutíferas"> 
+                    <figcaption>Árvores frutíferas</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/nativa.jpg" alt="Árvores nativas"> 
+                    <figcaption>Árvores nativas</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/ornamentais.jpeg" alt="Árvores ornamentais"> 
+                    <figcaption>Árvores ornamentais</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/medicinais.jpg" alt="Árvores medicinais"> 
+                    <figcaption>Árvores medicinais</figcaption>
+                </figure>
+            </div>
+            <p>Descubra mais sobre as diferentes espécies, suas características distintas e como elas contribuem para a biodiversidade.</p>
+        </section>
+        <section id="contato">
             <h2>Contato</h2>
-            <div class="contact-methods">
-                <div>
-                    <h3>Fale conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu nome" required/>
-                        <input type="email" placeholder="Seu e-mail" required/>
-                        <input type="tel" placeholder="Seu telefone (opicional)" />
-                        <textarea placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div>
-                    <h3>Nos acompanhe</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a href="#" title="Siga-nos no Instagram">
-                                <img src="./images/instagram.png" alt="Logo do Instagram"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no Facebook">
-                                <img src="./images/facebook.png" alt="Logo do Facebook"/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite nosso canal do  Youtube">
-                                <img src="./images/youtube.png" alt="Logo do Youtube"/>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua JavaScript nº124, Vila HTML - São Paulo - SP
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>
-                &copy; Games Shop - Todos os direitos reservados - 2023
-            </p>
-        </div>
-    </footer>
-</body>
+            <p>Estamos aqui para responder às suas perguntas sobre árvores e conservação ambiental. Se você deseja mais informações, tem sugestões ou quer se envolver em projetos relacionados às árvores, entre em contato conosco através do formulário abaixo:</p>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <footer>
+            <p>Árvores &copy; 2023</p>
+        </footer>
+    </body>
 </html>
