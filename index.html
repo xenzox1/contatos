@@ -9,7 +9,69 @@
 </head>
 <body>
     <div class="container">
-        
+
+        <!-- Tabela de contatos -->
+        <div class="row">
+            <h5 class="center">
+                CONTATOS
+            </h5>
+            <table class="row highlight centered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Botão para adição de contatos -->
+        <button data-target="addContact" class="modal-trigger btn-floating btn-large waves-effect waves-light purple right fixed-action-btn">
+            <i class="material-icons">add</i>
+        </button>
+
+    </div>
+
+    <!-- Card de adição de contatos -->
+    <div id="addContact" class="modal bottom-sheet">
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-content">
+                        <h5 class="center">
+                            INSIRA OS DADOS DO CONTATO AQUI
+                        </h5>
+                        
+                            <div class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input type="text" id="nome" class="validate" required="required">
+                                        <label for="nome">Nome</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">phone</i>
+                                        <input type="tel" id="telefone" class="validate" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" required="required">
+                                        <label for="telefone">Telefone</label>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="modal-footer">
+                        <button type="submit" class="btn waves-effect waves-light flow-text purple">
+                            Adicionar o contato
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
